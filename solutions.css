@@ -1,0 +1,224 @@
+/* Soluzione 1 */
+
+.ex-1-square {
+  transition: 3s;
+}
+
+.ex-1-square:hover {
+  background: red;
+}
+
+/* Soluzione 2 */
+
+.ex-2-square {
+  transition: 3s;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+/* soluzione 3 */
+
+.ex-3-square {
+  transition: 3s;
+}
+
+.ex-3-square:hover {
+  border-radius: 100%;
+}
+
+/* soluzione 4  */
+
+.ex-4-square {
+  transition: 1s;
+}
+
+.ex-4-square:hover {
+  background: transparent;
+}
+
+/* soluzione 5 */
+
+.ex-5-square {
+  transition: 1s;
+}
+
+.ex-5-square:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.ex-5-square:active {
+  width: 20px;
+  height: 20px;
+}
+
+/* esercizio 6 */
+
+.ex-6-img:hover {
+  filter: grayscale();
+}
+
+/* esercizio 7 */
+
+.ex-7-img {
+  transition: 3s;
+}
+
+.ex-7-img:hover {
+  filter: blur(5px) sepia();
+}
+
+/* esercizio 8 */
+
+.ex-8-img {
+  transition: 3s;
+}
+
+.ex-8-img:hover {
+  filter: hue-rotate(90deg) brightness(0.30);
+  border-radius: 30px;
+}
+
+/* esercizio 9 */
+
+.ex-9-img {
+  transition: 3s;
+}
+
+.ex-9-img:hover {
+  filter: sepia(1) saturate(3);
+  width: 50%;
+  height: 50%;
+  border-radius: 15px;
+}
+
+/* esercizio 10 */
+
+.ex-10-icon {
+ animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+/* esercizio 11 */
+
+.ex-11-icon:hover {
+  animation: half-spin 1s linear;
+}
+
+@keyframes half-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+  animation: right-move 2s linear
+}
+
+@keyframes right-move {
+  0% {
+    left: 10%;
+  }
+  50% {
+    left: 60%
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: left-move 2s linear
+}
+
+@keyframes left-move {
+  0% {
+    right: 20%;
+  }
+  50% {
+    right: 60%
+  }
+  100% {
+    right: 20%;
+  }
+}
+
+/* esercizio 13 */
+
+
+.ex-13-button:hover .ex-13-top-white {
+  animation: round-move-top 3s linear;
+}
+
+@keyframes round-move-top {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+  20% {
+    left: 175px;
+    top: -10px;
+  }
+  40% {
+    left: 175px;
+    top: 60px;
+  }
+  60% {
+    left: -20px;
+    top: 60px;
+  }
+  80% {
+    left: -20px;
+    top: -10px;
+  }
+  100% {
+    top: -10px;
+    left: 10%;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: round-move-bottom 3s linear;
+}
+
+@keyframes round-move-bottom {
+  0% {
+    left: 105px;
+    top: 60px;
+  }
+  20% {
+    left: -20px;
+    top: 60px;
+  }
+  40% {
+    left: -20px;
+    top: -10px;
+  }
+  60% {
+    left: 175px;
+    top: -10px;
+  }
+  80% {
+    left: 175px;
+    top: 60px;
+  }
+  100% {
+    left: 105px;
+    top: 60px;
+  }
+}
